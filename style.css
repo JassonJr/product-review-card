@@ -104,7 +104,7 @@ p {
     background-color: rgb(26, 64, 49);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
     .desktop-img {
         display: none;
     }
@@ -116,7 +116,7 @@ p {
     }
     .card-body {
         display: inline-block;
-        height: 93vh;
+        height: 630px;
         width: 90vw;
     }
     .product-title {
