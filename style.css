@@ -6,10 +6,11 @@
 }
 
 body {
-    background-color: bisque;
+    background-color: rgb(243, 234, 227);
 }
 
 .container {
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -30,9 +31,111 @@ img {
     border-bottom-left-radius: 20px;
 }
 
+.mobile-img {
+    display: none;
+}
+
 .product-details {
     width: 50%;
     height: auto;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    padding: 30px;
+}
+
+.product-details > * {
+    margin-top: 25px;
+}
+.product-details > .product-type {
+    margin-top: 0px;
+}
+
+.product-type {
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.product-title {
+    word-spacing: 3px;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    color: grey;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.price, .actual-price {
+    color: rgb(61, 129, 104);
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    word-spacing: 2px;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(61, 129, 104);
+    padding: 20px;
+    width: 100%;
+}
+.add:hover{
+    cursor: pointer;
+}
+.add:active {
+    background-color: rgb(26, 64, 49);
+}
+
+@media only screen and (max-width: 375px) {
+    .desktop-img {
+        display: none;
+    }
+    .mobile-img {
+        display: block;
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+    .card-body {
+        display: inline-block;
+        height: 93vh;
+        width: 90vw;
+    }
+    .product-title {
+        font-size: 30px;
+        word-spacing: 1px;
+        line-height: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+    .product-details {
+        width: 100%;
+    }
+
+    .product-details > * {
+        margin-top: 20px;
+    }
+    .product-details > .product-type {
+        margin-top: 0px;
+    }
 }

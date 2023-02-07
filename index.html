@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Product Review Card</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
@@ -9,13 +15,17 @@
     <body>
         <div class="container">
             <div class="card-body">
-                <img src="./img/image-product-desktop.jpg" alt="">
+                <img src="./img/image-product-desktop.jpg" class="desktop-img" alt="">
+                <img src="./img/image-product-mobile.jpg" class="mobile-img" alt="">
                 <div class="product-details">
-                    <h4> PERFUME </h4>
-                    <h3> Gabrielle Essence Eau De Parfum </h3>
+                    <h4 class="product-type"> PERFUME </h4>
+                    <h1 class="product-title"> Gabrielle Essence Eau De Parfum </h1>
                     <p> A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator for the House of CHANEL </p>
-                    <div class="price"></div>
-                    <button class="add"> Add to Cart </button>
+                    <div class="price">
+                        <h1 class="actual-price"> $149.99 </h1>
+                        <p><strike> $169.99 </strike></p>
+                    </div>
+                    <button class="add"> <img src="img/icon-cart.svg" style="width: 16px; height: 16px; border-radius: 0;" alt=""> Add to Cart </button>
                 </div>
             </div>
         </div>
