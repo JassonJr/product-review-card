@@ -68,7 +68,8 @@ h1 {
 
 p {
     text-align: left;
-    font-size: 20px;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    /* padding-top: clamp(0.5rem, 2vw, 0.75rem); */
     font-weight: 500;
     color: grey;
 }
@@ -78,7 +79,11 @@ p {
     align-items: center;
     column-gap: 20px;
 }
-.price, .actual-price {
+.price, .discounted-price {
+    font-size: clamp(2.5rem, 3vw, 1.1rem);
+    /* padding: clamp(0.5rem, 7vw, 0.75rem); */
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
     color: rgb(61, 129, 104);
 }
 
@@ -126,10 +131,12 @@ p {
     }
 
     p {
-        font-size: 16px;
+        /* font-size: clamp(1rem, 2vw, 3rem); */
+        padding-left: clamp(0.2rem, 1.5vw, 1rem);
     }
     .product-details {
         width: 100%;
+        padding: 25px;
     }
 
     .product-details > * {
